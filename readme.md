@@ -30,7 +30,7 @@ npx http-server . -p 8080
 
 ## Connecting Libaries
 
-First you will need to connnect Phaser, ScratchGame and DebugSyss.
+First you will need to connnect Phaser, ScratchGame and VersionSys.
 
 ```html
 <head>
@@ -38,4 +38,13 @@ First you will need to connnect Phaser, ScratchGame and DebugSyss.
     <script src="lib/ScratchGame.js"></script>
     <script src="lib/VersionSys.js"></script>
 </head>
+```
+
+## Functions
+
+```js
+function create(){
+    // versionSys.loadLib() you can seperated by comma put the names of the files in the folder lib for it to automaticly to load the libaries in.
+    versionSys.loadlib(DebugSys);
+}
 ```
