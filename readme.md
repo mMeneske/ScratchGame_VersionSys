@@ -44,7 +44,8 @@ First you will need to connnect Phaser, ScratchGame and VersionSys.
 
 ```js
 function create(){
-    // versionSys.loadLib() you can seperated by comma put the names of the files in the folder lib for it to automaticly to load the libaries in.
+    // versionSys.loadLib() you can seperated by comma put the names of the files in the folder lib
+    // for it to automaticly to load the libaries in.
     versionSys.loadlib(DebugSys);
 }
 ```
