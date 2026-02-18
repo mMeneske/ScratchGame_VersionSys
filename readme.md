@@ -18,10 +18,10 @@ https://github.com/Mperv/scratch-game
 
 ### Optional supported libraries
 
-DebugSys a useful debugging library:
+DebugSys is a useful debugging library:
 https://github.com/mMeneske/ScratchGame_DebugSys
 
-CloneSys a library that adds clones similar to the ones in scratch 3:
+CloneSys is a library that adds clones similar to the ones in scratch 3:
 https://github.com/mMeneske/ScratchGame_CloneSys
 
 ## Starting server
@@ -50,13 +50,17 @@ First you will need to connnect Phaser, ScratchGame and VersionSys.
 </head>
 ```
 
+## Overwiew
+
+This is a pretty unique libary since it only has one function you can toggle
+
 ## Functions
 
 ```js
 function create(){
-    // versionSys.loadLib() you can seperated by comma put the names of the files in the folder lib
-    // for it to automaticly to load the libaries in*.
-    // * this will only work for the libaries in the section "Optional supported libraries" above.
-    versionSys.loadlib(DebugSys, CloneSys);
+    // versionSys.debugSys will equal true if VersionSys has detceted DebugSys, this can be done 
+    // with all libaries in "Optional supported libraries"
+    console.log(versionSys.debugSys);
+    console.log(versionSys.cloneSys);
 }
 ```
