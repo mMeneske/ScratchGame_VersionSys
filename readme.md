@@ -1,4 +1,4 @@
-# VersionSys v1.26.8a for ScratchGame v1.26.8a
+# VersionSys v1.26.8b for ScratchGame v1.26.8a
 ## An expantion for ScratchGame
 
 ## Prior knowledge
@@ -41,6 +41,7 @@ npx http-server . -p 8080
 ## Connecting libaries
 
 First you will need to connnect Phaser, ScratchGame and VersionSys.
+If you are using any of the "Optional supported libraries" they will be connected automatically.
 
 ```html
 <head>
@@ -62,5 +63,16 @@ function create(){
     // with all libaries in "Optional supported libraries"
     console.log(versionSys.debugSys);
     console.log(versionSys.cloneSys);
+}
+```
+
+## Version
+
+```js
+function update(){
+    // versionSys.version will return the version of VersionSys.
+    console.log(versionSys.version);
+    // versionSys.versionId will return the id for the version of VersionSys.
+    console.log(versionSys.versionId);
 }
 ```
