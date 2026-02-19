@@ -52,7 +52,7 @@ First you will need to connnect Phaser, ScratchGame and VersionSys.
 
 ## Overwiew
 
-This is a pretty unique libary since it only has one function you can toggle
+This is a pretty unique libary since it only has one function you can read, the rest is run by he other libaries it suports. VersionSys job is to automatically connect all other libaries that it supports and run check if any of them might not be compatible, it also allows libaries to use functions from other libaries.
 
 ## Functions
 
